@@ -1,0 +1,56 @@
+/* Global */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+h1 {
+  font-family: 'Merriweather', serif;
+}
+body {
+  position: relative;
+}
+/* end of Global */
+
+/* Page Banner */
+.page-banner_home {
+  background-image: url("../img/homepage/elyzagrace-paris.webp");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat; 
+}
+.page-banner_coming-soon {
+  height: 100vh;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.page-banner_main-heading {
+  position: relative;
+  z-index: 2;
+}
+/* end of Page Banner */
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.overlay_white {
+  background-color: #fff;
+  --animate-duration: 2s;
+}
+.overlay_solid-pink {
+  background-color: #964D5A;
+  opacity: 0.35;
+  z-index: 1;
+}
+/* end of Overlay */
+
