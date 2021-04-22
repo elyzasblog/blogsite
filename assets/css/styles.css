@@ -7,7 +7,7 @@
 html {
   font-family: 'Merriweather Sans', sans-serif;
 }
-h1 {
+h1, h2, h3, h4, h5 {
   font-family: 'Merriweather', serif;
 }
 body {
@@ -33,10 +33,26 @@ body {
 .page-banner_main-heading {
   position: relative;
   z-index: 2;
+  font-size: 56px;
 }
-@media only screen and (max-width: 767px) {
+.page-banner_sub-heading {
+  position: relative;
+  z-index: 2;
+}
+@media only screen and (min-width: 576px) {
+  .page-banner_main-heading br {
+    display: none;
+  }
+}
+@media only screen and (max-width: 575px) {
   .page-banner_home {
-    background-position: top right;
+    background-image: url("../img/homepage/elyzagrace-paris-mobile.webp");
+    background-position: top center;
+  }
+  .page-banner_main-heading,
+  .page-banner_sub-heading {
+    text-align: center;
+    color: #fff;
   }
 }
 /* end of Page Banner */
@@ -57,6 +73,11 @@ body {
   background-color: #964D5A;
   opacity: 0.35;
   z-index: 1;
+}
+@media only screen and (max-width: 575px) {
+  .overlay_solid-pink {
+    opacity: 0.6;
+  }
 }
 /* end of Overlay */
 
