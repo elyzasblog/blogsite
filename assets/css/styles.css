@@ -34,6 +34,11 @@ body {
   position: relative;
   z-index: 2;
 }
+@media only screen and (max-width: 767px) {
+  .page-banner_home {
+    background-position: top right;
+  }
+}
 /* end of Page Banner */
 
 /* Overlay */
