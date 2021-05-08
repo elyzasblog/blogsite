@@ -4,14 +4,19 @@
   margin: 0;
   box-sizing: border-box;
 }
-html {
+body {
+  position: relative;
   font-family: 'Merriweather Sans', sans-serif;
 }
 h1, h2, h3, h4, h5 {
   font-family: 'Merriweather', serif;
 }
-body {
-  position: relative;
+p, a, span {
+  color: #1B1B1B;
+}
+a:hover {
+  color: #9E515F;
+  transition: color 300ms;
 }
 /* end of Global */
 
@@ -80,4 +85,145 @@ body {
   }
 }
 /* end of Overlay */
+
+.main-content {
+  position: relative;
+}
+
+/* Navigation Bar */
+.nav-link,
+.eg-navbar-logo {
+  font-family: 'Merriweather', serif;
+}
+.eg-navbar-logo:hover {
+  color: #E1BBA1;
+}
+.main-header .nav-link,
+.eg-navbar-logo {
+  color: #fff;
+}
+.main-header .nav-link:hover {
+  color: #E1BBA1;
+}
+.eg-navbar {
+  padding: 30px 50px;
+}
+.eg-navbar-logo {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 23px;
+}
+.nav-link.active {
+  color: #E1BBA1;
+}
+.dropdown-item {
+  color: #9E515F;
+}
+@media only screen and (min-width: 768px) {
+  .eg-navbar-logo {
+    position: absolute;
+    top: 50%;
+    left: 140px;
+    transform: translate(-50%, -50%);
+  }
+  .main-header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+  }
+  .navbar-nav > .nav-item > .nav-link {
+    margin-right: 20px;
+  }
+  .navbar-nav > .nav-item > .nav-link:last-child {
+    margin-right: 0;
+  }
+  .nav-item_say-hi {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+  .say-hi.dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+}
+/* end of Navigation Bar */
+
+/* Homepage Banner */
+.homepage-banner {
+  background-image: url("../img/homepage/elyza-grace-homepage-banner-geneva.webp");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.homepage-banner {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+.homepage-banner p {
+  color: #fff;
+}
+@media only screen and (min-width: 992px) {
+  .homepage-banner {
+    height: 750px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .homepage-banner {
+    height: 500px;
+  }
+}
+/* end of Homepage Banner */
+
+/* Home Page */
+.main-title {
+  font-size: 64px;
+  text-align: center;
+  color: #fff;
+}
+/* end of Home Page */
+
+/* TLD section */
+.tld-col {
+  border-radius: 10%;
+}
+.tld-content {
+  height: 275px;
+  background-color: #E1BBA1;
+  border-radius: 12px;
+  padding: 50px;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: stretch;
+}
+.tld-content h3 {
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  .tld-section {
+    margin-top: -150px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .tld-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+/* end of TLD section */
+
+/* About Me Section */
+.about-me-section {
+  padding-top: 100px;
+  padding-top: 100px;
+}
+/* end of About Me Section */
 
